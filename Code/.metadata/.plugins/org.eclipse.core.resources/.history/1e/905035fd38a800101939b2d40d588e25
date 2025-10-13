@@ -1,0 +1,33 @@
+package com.cdac.testutils;
+
+import java.sql.Connection;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.sql.Statement;
+
+import static com.cdac.utils.DbConnection.dbConnection;;
+
+public class TestUtils {
+
+	public static void main(String[] args) throws SQLException {
+		
+		try(Connection cs = dbConnection();
+				
+				Statement st = cs.createStatement();
+				
+				ResultSet rs = st.executeQuery("Select * from product"))
+		{
+			System.out.printf("\n Author Id %d Author Name %s BirthDate %s Nationality %s",
+					rs.getInt(1),rs.getString(2),rs.getDate(3),rs.getString(4));
+			
+		}catch(Exception e) {
+			e.printStackTrace();
+		}
+		
+		
+		
+		
+		
+	}
+
+}

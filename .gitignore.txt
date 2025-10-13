@@ -1,0 +1,29 @@
+# Build artifacts
+target/
+bin/
+*.class
+*.jar
+*.war
+*.ear
+
+# IDE-specific files (STS/Eclipse)
+.classpath
+.project
+.settings/
+.apt_generated/
+.factorypath
+.sts4-cache/
+.metadata/ # Optional, consider your team's preference
+
+# Logs and temporary files
+*.log
+*.tmp
+*.temp
+
+# Maven Wrapper
+.mvn/wrapper/maven-wrapper.jar
+HELP.md
+
+# Operating System files
+.DS_Store
+Thumbs.db

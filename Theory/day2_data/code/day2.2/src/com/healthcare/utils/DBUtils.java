@@ -8,7 +8,7 @@ public class DBUtils {
 	private static Connection connection;
 	private static String url="jdbc:mysql://localhost:3306/iacsd_25";
 	private static String userName="root";
-	private static String password="root";
+	private static String password="rushikesh2623";
 	
 //add public static method to get connection to DB
 	public static Connection openConnection() throws SQLException{

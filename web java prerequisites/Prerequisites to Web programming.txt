@@ -1,0 +1,18 @@
+Pre requisites to Web programming in Java
+
+
+I have uploaded , in the same g drive folder , a <web java pre requisites> folder
+1. Please read -
+"web basics\TCP IP Primer article link.txt"
+web basics\HTTP_basics.txt"
+"web basics\web_server_basics.txt"
+"web basics\response content type.txt"
+
+2. Important core java topics to revise
+2.1 Collection framework - ArrayList & HashMap
+2.2 Exception handling with custom exceptions
+2.3 Synchronization in threads (synchronized blocks)
+
+3. For Mac Users
+Refer to -
+"Adding Web developer tools in STS 4.txt"

@@ -17,7 +17,7 @@ import com.healthcare.pojos.Patient;
 public class PatientDaoImpl implements PatientDao{
 	
 	private Connection cn;
-	private PreparedStatement ps1,ps2,ps3,ps4;
+	private PreparedStatement ps1,ps2,ps3,ps4,ps5;
 	
 	public PatientDaoImpl() throws SQLException {
 		cn = openConnection();
@@ -29,6 +29,8 @@ public class PatientDaoImpl implements PatientDao{
 		ps3 = cn.prepareStatement("delete from patients where id = ?");
 		
 		ps4 = cn.prepareStatement("insert into appointments(doctor_id,patient_id,appointment_datetime) values (?,?,?)");
+		
+		ps5 = cn.prepareStatement("select a.id,a.appointment_datetime,p.name from appointment a inner join Patient p on a.doctor_id = p.id where a.appointment_date > now()");
 	}
 
 	@Override

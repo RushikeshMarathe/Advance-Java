@@ -12,7 +12,8 @@ public interface PatientDao {
 
 
 	 List<Patient> displayPatientByBornDate(String startDate,String endDate) throws SQLException;
-	 
+
+
 	 
 	 void cleanUp() throws SQLException;
 	 

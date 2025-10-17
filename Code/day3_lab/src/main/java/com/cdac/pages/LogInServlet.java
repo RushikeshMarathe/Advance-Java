@@ -6,6 +6,8 @@ import jakarta.servlet.annotation.WebServlet;
 import jakarta.servlet.http.HttpServlet;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
+import jakarta.servlet.http.HttpSession;
+
 import java.io.IOException;
 import java.io.PrintWriter;
 import java.sql.SQLException;
@@ -20,6 +22,8 @@ import com.healthcare.pojos.Patient;
 @WebServlet(value ="/login",loadOnStartup = 1)
 public class LogInServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
+	
+	private PatientDao pdService;
 
 	/**
 	 * @see Servlet#init(ServletConfig)
@@ -27,11 +31,12 @@ public class LogInServlet extends HttpServlet {
 	public void init(ServletConfig config) throws ServletException {
 		// TODO Auto-generated method stub
 		try {
-		PatientDao pdService = new PatientDaoImpl();
+		pdService = new PatientDaoImpl();
 		
 		}catch(Exception e)
 		{
 			e.printStackTrace();
+			throw new ServletException("Exception in in-it Servlet", e);
 		}
 		
 	}
@@ -43,11 +48,11 @@ public class LogInServlet extends HttpServlet {
 		// TODO Auto-generated method stub
 		try {
 			//patient dao instance -clean up
-			PatientDao pdService = new PatientDaoImpl();
 			pdService.cleanUp();
 		} catch (SQLException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
+			throw new RuntimeException("error in destroy"+getClass(),e);
 		}
 
 	}
@@ -65,7 +70,6 @@ public class LogInServlet extends HttpServlet {
 
 		
 		try(PrintWriter pw = response.getWriter()) {
-			PatientDao pdService = new PatientDaoImpl();
 			String email = request.getParameter("em");
 			String password = request.getParameter("pass");
 			
@@ -73,15 +77,20 @@ public class LogInServlet extends HttpServlet {
 
 			if(loginPatient != null)
 			{
-				pw.print("<h1>Successfully sign in!.." +loginPatient.getEmail()+"</h1>");
+				HttpSession session = request.getSession();
+				session.setAttribute("patient_details", loginPatient);
+				response.sendRedirect("patient_dashboard");
+				//pw.print("<h1>Successfully sign in!.." +loginPatient.getEmail()+"</h1>");
 			}else {
-				pw.print("<h1>Error while Sign In!...</h1>");
+				pw.print("<h1>Error while Sign In!..., Please <a href='login.html'>Retry</a></h1>");
 			}
 			
 		
 		} catch (SQLException e) {
 			// TODO Auto-generated catch block
+			
 			e.printStackTrace();
+			throw new ServletException("Error in destroy", e);
 		}
 		
 		

@@ -15,6 +15,8 @@ import java.io.PrintWriter;
 @WebServlet(value = "/authenticate", loadOnStartup = 1)
 public class AuthenticationServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
+	
+	
 
 	/**
 	 * @see Servlet#init()

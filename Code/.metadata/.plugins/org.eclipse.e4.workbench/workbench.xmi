@@ -415,23 +415,23 @@
       <tags>categoryTag:Help</tags>
     </sharedElements>
     <sharedElements xsi:type="advanced:Area" xmi:id="_JUrocKgzEfC-4pZsKU8ZHQ" elementId="org.eclipse.ui.editorss" selectedElement="_JUrocagzEfC-4pZsKU8ZHQ">
-      <children xsi:type="basic:PartStack" xmi:id="_JUrocagzEfC-4pZsKU8ZHQ" elementId="org.eclipse.e4.primaryDataStack" selectedElement="_mFIuEKs-EfC8_7QeQ6XstQ">
+      <children xsi:type="basic:PartStack" xmi:id="_JUrocagzEfC-4pZsKU8ZHQ" elementId="org.eclipse.e4.primaryDataStack" selectedElement="_syheAKs8EfC8_7QeQ6XstQ">
         <tags>EditorStack</tags>
         <tags>org.eclipse.e4.primaryDataStack</tags>
         <tags>active</tags>
         <children xsi:type="basic:Part" xmi:id="_syheAKs8EfC8_7QeQ6XstQ" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="PatientDashboardServlet.java" iconURI="platform:/plugin/org.eclipse.jdt.ui/icons/full/obj16/jcu_obj.png" closeable="true">
-          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;editor id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;PatientDashboardServlet.java&quot; partName=&quot;PatientDashboardServlet.java&quot; title=&quot;PatientDashboardServlet.java&quot; tooltip=&quot;day5.1/src/main/java/com/healthcare/pages/PatientDashboardServlet.java&quot;>&#xD;&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/day5.1/src/main/java/com/healthcare/pages/PatientDashboardServlet.java&quot;/>&#xD;&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;0&quot; selectionOffset=&quot;2586&quot; selectionTopPixel=&quot;1300&quot;/>&#xD;&#xA;&lt;/editor>"/>
-          <tags>Editor</tags>
-          <tags>removeOnHide</tags>
-          <tags>org.eclipse.jdt.ui.CompilationUnitEditor</tags>
-        </children>
-        <children xsi:type="basic:Part" xmi:id="_mFIuEKs-EfC8_7QeQ6XstQ" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="AppointmentsServlet.java" iconURI="platform:/plugin/org.eclipse.jdt.ui/icons/full/obj16/jcu_obj.png" closeable="true">
-          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;editor id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;AppointmentsServlet.java&quot; partName=&quot;AppointmentsServlet.java&quot; title=&quot;AppointmentsServlet.java&quot; tooltip=&quot;day5.1/src/main/java/com/healthcare/pages/AppointmentsServlet.java&quot;>&#xD;&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/day5.1/src/main/java/com/healthcare/pages/AppointmentsServlet.java&quot;/>&#xD;&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;0&quot; selectionOffset=&quot;3301&quot; selectionTopPixel=&quot;1724&quot;/>&#xD;&#xA;&lt;/editor>"/>
+          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;editor id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;PatientDashboardServlet.java&quot; partName=&quot;PatientDashboardServlet.java&quot; title=&quot;PatientDashboardServlet.java&quot; tooltip=&quot;day5.1/src/main/java/com/healthcare/pages/PatientDashboardServlet.java&quot;>&#xD;&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/day5.1/src/main/java/com/healthcare/pages/PatientDashboardServlet.java&quot;/>&#xD;&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;0&quot; selectionOffset=&quot;2099&quot; selectionTopPixel=&quot;909&quot;/>&#xD;&#xA;&lt;/editor>"/>
           <tags>Editor</tags>
           <tags>removeOnHide</tags>
           <tags>org.eclipse.jdt.ui.CompilationUnitEditor</tags>
           <tags>active</tags>
           <tags>activeOnClose</tags>
+        </children>
+        <children xsi:type="basic:Part" xmi:id="_mFIuEKs-EfC8_7QeQ6XstQ" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="AppointmentsServlet.java" iconURI="platform:/plugin/org.eclipse.jdt.ui/icons/full/obj16/jcu_obj.png" closeable="true">
+          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;editor id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;AppointmentsServlet.java&quot; partName=&quot;AppointmentsServlet.java&quot; title=&quot;AppointmentsServlet.java&quot; tooltip=&quot;day5.1/src/main/java/com/healthcare/pages/AppointmentsServlet.java&quot;>&#xD;&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/day5.1/src/main/java/com/healthcare/pages/AppointmentsServlet.java&quot;/>&#xD;&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;0&quot; selectionOffset=&quot;3489&quot; selectionTopPixel=&quot;1786&quot;/>&#xD;&#xA;&lt;/editor>"/>
+          <tags>Editor</tags>
+          <tags>removeOnHide</tags>
+          <tags>org.eclipse.jdt.ui.CompilationUnitEditor</tags>
         </children>
         <children xsi:type="basic:Part" xmi:id="_QDV_8KtAEfC8_7QeQ6XstQ" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="LogoutServlet.java" iconURI="platform:/plugin/org.eclipse.jdt.ui/icons/full/obj16/jcu_obj.png" closeable="true">
           <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;editor id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;LogoutServlet.java&quot; partName=&quot;LogoutServlet.java&quot; title=&quot;LogoutServlet.java&quot; tooltip=&quot;day5.1/src/main/java/com/healthcare/pages/LogoutServlet.java&quot;>&#xD;&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/day5.1/src/main/java/com/healthcare/pages/LogoutServlet.java&quot;/>&#xD;&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;0&quot; selectionOffset=&quot;628&quot; selectionTopPixel=&quot;0&quot;/>&#xD;&#xA;&lt;/editor>"/>
@@ -707,7 +707,7 @@
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_JCyAIKgzEfC-4pZsKU8ZHQ" elementId="org.eclipse.ui.workbench.file">
         <tags>Draggable</tags>
-        <children xsi:type="menu:HandledToolItem" xmi:id="_FA2cgKs4EfC8_7QeQ6XstQ" elementId="print" visible="false" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/print_edit.png" tooltip="Print" command="_HIuHTKgzEfC-4pZsKU8ZHQ"/>
+        <children xsi:type="menu:HandledToolItem" xmi:id="_qe0KAKvAEfCtJ-GjUyxdhw" elementId="print" visible="false" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/print_edit.png" tooltip="Print" command="_HIuHTKgzEfC-4pZsKU8ZHQ"/>
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_JCyAIagzEfC-4pZsKU8ZHQ" elementId="group.edit" toBeRendered="false">
         <tags>toolbarSeparator</tags>
@@ -715,8 +715,8 @@
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_JCynMKgzEfC-4pZsKU8ZHQ" elementId="org.eclipse.ui.workbench.edit">
         <tags>Draggable</tags>
-        <children xsi:type="menu:HandledToolItem" xmi:id="_FA3qoKs4EfC8_7QeQ6XstQ" elementId="undo" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/undo_edit.png" tooltip="Undo" command="_HIoAqqgzEfC-4pZsKU8ZHQ"/>
-        <children xsi:type="menu:HandledToolItem" xmi:id="_FA44wKs4EfC8_7QeQ6XstQ" elementId="redo" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/redo_edit.png" tooltip="Redo" enabled="false" command="_HIqc_qgzEfC-4pZsKU8ZHQ"/>
+        <children xsi:type="menu:HandledToolItem" xmi:id="_qe1YIKvAEfCtJ-GjUyxdhw" elementId="undo" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/undo_edit.png" tooltip="Undo" enabled="false" command="_HIoAqqgzEfC-4pZsKU8ZHQ"/>
+        <children xsi:type="menu:HandledToolItem" xmi:id="_qe2mQKvAEfCtJ-GjUyxdhw" elementId="redo" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/redo_edit.png" tooltip="Redo" enabled="false" command="_HIqc_qgzEfC-4pZsKU8ZHQ"/>
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_JCynMagzEfC-4pZsKU8ZHQ" elementId="additions" toBeRendered="false">
         <tags>toolbarSeparator</tags>
@@ -749,7 +749,7 @@
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_JCzOQKgzEfC-4pZsKU8ZHQ" elementId="org.eclipse.ui.workbench.navigate">
         <tags>Draggable</tags>
-        <children xsi:type="menu:HandledToolItem" xmi:id="_FA6G4Ks4EfC8_7QeQ6XstQ" elementId="org.eclipse.ui.window.pinEditor" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/pin_editor.png" tooltip="Pin Editor" type="Check" command="_HItgRKgzEfC-4pZsKU8ZHQ"/>
+        <children xsi:type="menu:HandledToolItem" xmi:id="_qe4bcKvAEfCtJ-GjUyxdhw" elementId="org.eclipse.ui.window.pinEditor" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/pin_editor.png" tooltip="Pin Editor" type="Check" command="_HItgRKgzEfC-4pZsKU8ZHQ"/>
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_JCz1UKgzEfC-4pZsKU8ZHQ" elementId="group.editor" toBeRendered="false">
         <tags>toolbarSeparator</tags>
@@ -3166,7 +3166,7 @@
   <addons xmi:id="_HHoiGqgzEfC-4pZsKU8ZHQ" elementId="MinMax Addon" contributorURI="platform:/plugin/org.eclipse.platform" contributionURI="bundleclass://org.eclipse.e4.ui.workbench.addons.swt/org.eclipse.e4.ui.workbench.addons.minmax.MinMaxAddon"/>
   <addons xmi:id="_HHoiG6gzEfC-4pZsKU8ZHQ" elementId="org.eclipse.ui.workbench.addon.0" contributorURI="platform:/plugin/org.eclipse.platform" contributionURI="bundleclass://org.eclipse.e4.ui.workbench/org.eclipse.e4.ui.internal.workbench.addons.HandlerProcessingAddon"/>
   <addons xmi:id="_HH5AwKgzEfC-4pZsKU8ZHQ" elementId="SplitterAddon" contributionURI="bundleclass://org.eclipse.e4.ui.workbench.addons.swt/org.eclipse.e4.ui.workbench.addons.splitteraddon.SplitterAddon"/>
-  <addons xmi:id="_ERmw4as4EfC8_7QeQ6XstQ" elementId="org.eclipse.ui.ide.addon.0" contributionURI="bundleclass://org.eclipse.ui.ide/org.eclipse.ui.internal.ide.addons.SaveAllDirtyPartsAddon"/>
+  <addons xmi:id="_pEIUsavAEfCtJ-GjUyxdhw" elementId="org.eclipse.ui.ide.addon.0" contributionURI="bundleclass://org.eclipse.ui.ide/org.eclipse.ui.internal.ide.addons.SaveAllDirtyPartsAddon"/>
   <addons xmi:id="_dz0JgGOlEeSMMaPQU2nlzw" elementId="org.eclipse.ui.ide.application.addon.0" contributorURI="platform:/plugin/org.eclipse.ui.ide.application" contributionURI="bundleclass://org.eclipse.ui.ide.application/org.eclipse.ui.internal.ide.application.addons.ModelCleanupAddon"/>
   <categories xmi:id="_HIdBcKgzEfC-4pZsKU8ZHQ" elementId="org.eclipse.team.ui.category.team" name="Version control (Team)" description="Actions that apply when working with a version control system"/>
   <categories xmi:id="_HIdBcagzEfC-4pZsKU8ZHQ" elementId="org.eclipse.ui.category.views" name="Views" description="Commands for opening views"/>

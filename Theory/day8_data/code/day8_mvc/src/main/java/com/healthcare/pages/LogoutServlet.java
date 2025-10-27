@@ -12,7 +12,7 @@ import java.io.IOException;
 /**
  * Servlet implementation class LogoutServlet
  */
-@WebServlet("/logout")
+@WebServlet(value="/logout",loadOnStartup = 4)
 public class LogoutServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 
@@ -26,7 +26,7 @@ public class LogoutServlet extends HttpServlet {
 		HttpSession session=request.getSession();
 		session.invalidate();
 		//redirect client to login form
-		response.sendRedirect("login.html");
+		response.sendRedirect("/day8_mvc/");
 	}
 
 }

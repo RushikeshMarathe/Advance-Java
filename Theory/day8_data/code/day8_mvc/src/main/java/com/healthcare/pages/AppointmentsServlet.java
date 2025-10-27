@@ -1,5 +1,6 @@
 package com.healthcare.pages;
 
+import jakarta.servlet.RequestDispatcher;
 import jakarta.servlet.ServletException;
 import jakarta.servlet.annotation.WebServlet;
 import jakarta.servlet.http.HttpServlet;
@@ -50,8 +51,7 @@ public class AppointmentsServlet extends HttpServlet {
 	protected void doPost(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
 		// set reps cont type
-		response.setContentType("text/html");
-		try (PrintWriter pw = response.getWriter()) {
+		try{
 			// get session from WC
 			HttpSession session = request.getSession();
 			System.out.println("from " + getClass() + " session is new " + session.isNew());
@@ -67,7 +67,9 @@ public class AppointmentsServlet extends HttpServlet {
 				String message = appointmentDao.bookAppointment(doctorId, patient.getId(), ts);
 				// add session scoped attribute
 				session.setAttribute("mesg", message);
+				
 				response.sendRedirect("patient_dashboard");
+				
 
 			}
 		} catch (Exception e) {
@@ -79,6 +81,19 @@ public class AppointmentsServlet extends HttpServlet {
 	@Override
 	protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 		try {
+			System.out.println(req.getParameter("action"));
+			String action = req.getParameter("action");
+			
+			
+			if(action.equals("show_form"))
+			{
+
+				RequestDispatcher rd = req.getRequestDispatcher("/WEB-INF/views/book_appointment.jsp");
+				rd.forward(req, resp);
+				
+			}else if(action.equals("cancel"))
+			{
+				
 			// read req params
 			int appointmentId = Integer.parseInt(req.getParameter("id"));
 			HttpSession session = req.getSession();
@@ -87,6 +102,7 @@ public class AppointmentsServlet extends HttpServlet {
 			String mesg = appointmentDao.cancelAppointment(appointmentId, patientId);
 			session.setAttribute(mesg, mesg);
 			resp.sendRedirect("patient_dashboard");
+			}
 		} catch (Exception e) {
 			throw new ServletException("err in do post " + getClass(), e);
 		}

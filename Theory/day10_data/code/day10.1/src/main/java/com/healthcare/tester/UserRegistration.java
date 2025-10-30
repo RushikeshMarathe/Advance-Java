@@ -17,13 +17,21 @@ public class UserRegistration {
 	public static void main(String[] args) {
 		try (Scanner sc = new Scanner(System.in); 
 				SessionFactory sf = getFactory()) {
-			//create user dao instance
+			//create user dao instance 
+			//creating dependency
 			UserDao userDao=new UserDaoImpl();			
 			System.out.println(
 					"Enter User Details -  firstName,  lastName,  email,  password,  phone,  dob, role, reg amount");
+			
+			// Does not exists
 			User user = new User(sc.next(), sc.next(), sc.next(), sc.next(), sc.next(), LocalDate.parse(sc.next()),
 					UserRole.valueOf(sc.next().toUpperCase()),sc.nextInt());
+			//Exist in heap [Transient]
+			
+			
 		System.out.println("Reg status "+userDao.signUp(user));
+		//User in Persistent state [L1 cache,having connection]
+		
 
 		} catch (Exception e) {
 			e.printStackTrace();

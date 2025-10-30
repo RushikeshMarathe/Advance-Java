@@ -23,9 +23,11 @@ public class UserDaoImpl implements UserDao {
 		Session session3 = getFactory().getCurrentSession();
 		System.out.println(session == session2);// t
 		System.out.println(session == session3);// t
-		System.out.println("Session is open " + session.isOpen() + " is connected " + session.isConnected());// t t
 		// 2. Begin a Transaction
+		//we can use .isConnected only within active/opened transaction
+
 		Transaction tx = session.beginTransaction();
+		System.out.println("Session is open " + session.isOpen() + " is connected " + session.isConnected());// t t
 
 		try {
 			// 3. Session API for inserting a record.
@@ -166,7 +168,7 @@ public class UserDaoImpl implements UserDao {
 					.getSingleResult();
 			// user - PERSISTENT (exists in DB n L1 cache)
 			user.setPassword(newPass);
-			// session.evict(user);//user - DETACHED
+			//session.evict(user);//user - DETACHED
 			/*
 			 * Any time you modify the state of persistent entity - Hibernate performs auto
 			 * dirty checking @commit - state updated => DML : update

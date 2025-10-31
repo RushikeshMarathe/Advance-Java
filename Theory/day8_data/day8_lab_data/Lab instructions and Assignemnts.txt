@@ -1,3 +1,4 @@
+
 Day 1
 
 Mandatory exercise - everyone MUST complete it.
@@ -330,6 +331,8 @@ After the consultation  is done , doc should be able to change appointment statu
 
 -> Add Cancel button.
 Due to some reason , doc should be able to cancel  appointment status from SCHEDULED -> CANCELLED
+
+
 
 
 

@@ -15,4 +15,8 @@ public interface ProductDao {
 	public Product getProductById(Long productId);
 	
 	public List<Product> getProductByDateCategory(LocalDate date,Category category);
+	
+	public String changeProductName(Long id,double price);
+	
+	public String applyDiscountToAll(int quantity,double discount);
 }

@@ -1,10 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-    <fullyQualifiedTypeName name="java.text.ParseException"/>
-    <fullyQualifiedTypeName name="com.healthcare.pojos.Patient"/>
-    <fullyQualifiedTypeName name="com.healthcare.dao.PatientDao"/>
-    <fullyQualifiedTypeName name="com.healthcare.dao.PatientDaoImpl"/>
-    <fullyQualifiedTypeName name="java.sql.Connection"/>
     <fullyQualifiedTypeName name="com.healthcare.utils.DBUtils"/>
     <fullyQualifiedTypeName name="java.sql.PreparedStatement"/>
     <fullyQualifiedTypeName name="jakarta.servlet.http.Cookie"/>
@@ -12,9 +7,7 @@
     <fullyQualifiedTypeName name="com.healthcare.dao.AppointmentDaoImpl"/>
     <fullyQualifiedTypeName name="com.healthcare.pojos.Appointment"/>
     <fullyQualifiedTypeName name="java.io.PrintWriter"/>
-    <fullyQualifiedTypeName name="java.time.LocalDateTime"/>
     <fullyQualifiedTypeName name="com.sun.net.httpserver.Request"/>
-    <fullyQualifiedTypeName name="javax.management.RuntimeErrorException"/>
     <fullyQualifiedTypeName name="com.healthcare.pojos.Doctor"/>
     <fullyQualifiedTypeName name="java.net.Authenticator.RequestorType"/>
     <fullyQualifiedTypeName name="jakarta.servlet.RequestDispatcher"/>
@@ -37,8 +30,6 @@
     <fullyQualifiedTypeName name="jakarta.persistence.EnumType"/>
     <fullyQualifiedTypeName name="com.healthcare.dao.UserDao"/>
     <fullyQualifiedTypeName name="com.healthcare.dao.UserDaoImpl"/>
-    <fullyQualifiedTypeName name="java.lang.System"/>
-    <fullyQualifiedTypeName name="org.hibernate.Transaction"/>
     <fullyQualifiedTypeName name="org.hibernate.cfg.Configuration"/>
     <fullyQualifiedTypeName name="org.hibernate.SessionFactory"/>
     <fullyQualifiedTypeName name="jakarta.persistence.Id"/>
@@ -48,16 +39,25 @@
     <fullyQualifiedTypeName name="jakarta.persistence.Column"/>
     <fullyQualifiedTypeName name="jakarta.persistence.Enumerated"/>
     <fullyQualifiedTypeName name="com.healthcare.entities.Product"/>
-    <fullyQualifiedTypeName name="com.healthcare.utils.HibernateUtils"/>
-    <fullyQualifiedTypeName name="org.hibernate.Session"/>
-    <fullyQualifiedTypeName name="java.lang.RuntimeException"/>
-    <fullyQualifiedTypeName name="java.util.Scanner"/>
-    <fullyQualifiedTypeName name="com.healthcare.dao.ProductDao"/>
-    <fullyQualifiedTypeName name="com.healthcare.dao.ProductDaoImpl"/>
     <fullyQualifiedTypeName name="com.healthcare.entities.Category"/>
     <fullyQualifiedTypeName name="java.util.List"/>
     <fullyQualifiedTypeName name="java.time.LocalDate"/>
     <fullyQualifiedTypeName name="java.util.Locale.Category"/>
     <fullyQualifiedTypeName name="lombok.Getter"/>
     <fullyQualifiedTypeName name="com.healthcare.entities.User"/>
+    <fullyQualifiedTypeName name="java.util.Scanner"/>
+    <fullyQualifiedTypeName name="com.healthcare.dao.ProductDao"/>
+    <fullyQualifiedTypeName name="com.healthcare.dao.ProductDaoImpl"/>
+    <fullyQualifiedTypeName name="org.hibernate.Session"/>
+    <fullyQualifiedTypeName name="com.healthcare.utils.HibernateUtils"/>
+    <fullyQualifiedTypeName name="org.hibernate.Transaction"/>
+    <fullyQualifiedTypeName name="jakarta.persistence.OneToOne"/>
+    <fullyQualifiedTypeName name="jakarta.persistence.CascadeType"/>
+    <fullyQualifiedTypeName name="lombok.AllArgsConstructor"/>
+    <fullyQualifiedTypeName name="com.healthcare.entities.Appointment"/>
+    <fullyQualifiedTypeName name="java.time.LocalDateTime"/>
+    <fullyQualifiedTypeName name="java.lang.System"/>
+    <fullyQualifiedTypeName name="javax.management.RuntimeErrorException"/>
+    <fullyQualifiedTypeName name="java.lang.RuntimeException"/>
+    <fullyQualifiedTypeName name="com.healthcare.entities.Status"/>
 </qualifiedTypeNameHistroy>

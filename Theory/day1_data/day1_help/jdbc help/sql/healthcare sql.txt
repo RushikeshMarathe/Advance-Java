@@ -26,7 +26,7 @@ CREATE TABLE appointments (
     doctor_id INT NOT NULL,
     patient_id INT NOT NULL,
     appointment_datetime TIMESTAMP NOT NULL,
-    status VARCHAR(20) DEFAULT 'SCHEDULED'
+    status VARCHAR(20) DEFAULT 'SCHEDULED',
     UNIQUE(doctor_id,  appointment_datetime), 
     FOREIGN KEY (doctor_id) REFERENCES doctors(id),
     FOREIGN KEY (patient_id) REFERENCES patients(id)

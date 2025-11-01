@@ -7,10 +7,10 @@
 	<!--Add Spring bean definitions here -->
 	<!-- dependency beans -->
 	<!-- eng singleton eager -->
-	<!-- <bean id="eng" class="com.cdac.dependency.EnglishTeacher" /> -->
+	<bean id="eng" class="com.cdac.dependency.EnglishTeacher" /> 
 	<!-- maths singleton lazy -->
-	<!-- <bean id="maths" class="com.cdac.dependency.MathsTeacher"
-		lazy-init="true" /> -->
+	 <bean id="maths" class="com.cdac.dependency.MathsTeacher"
+		lazy-init="true" /> 
 	<!-- sc prototype -->
 	<bean id="subjectTeacher" class="com.cdac.dependency.ScienceTeacher"
 		scope="prototype" />

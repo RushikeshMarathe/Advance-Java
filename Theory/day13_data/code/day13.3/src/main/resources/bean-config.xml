@@ -25,9 +25,9 @@
 	<bean id="public_school" class="com.cdac.dependent.PublicSchool"
 		init-method="myInit" destroy-method="myDestroy">
 		<!-- Child tag for Constructor based D.I -->
-		<constructor-arg name="myTeacher" ref="sc" />
+		<constructor-arg name="myTeacher" ref="sc"/>
 		<!-- nested tag for Setter Based D.I -->
-		<property name="sportsCoach" ref="football" />
+		<property name="sportsCoach" ref="football"/>
 	</bean>
 
 

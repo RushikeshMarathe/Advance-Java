@@ -9,4 +9,5 @@
     <typeInfo handle="=spring_mvc_hibernate/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;com.ems.service{DepartmentService.java[DepartmentService" modifiers="513" timestamp="1761995016964"/>
     <typeInfo handle="=day16_backend/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;com.cdac.service{RestaurantService.java[RestaurantService" modifiers="513" timestamp="1762279638404"/>
     <typeInfo handle="=day16_backend/E:\/ADV JAVA\/sts-4.30.0.RELEASE\/plugins\/org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_21.0.6.v20250130-0529\/jre\/lib\/jrt-fs.jar`java.base=/javadoc_location=/https:\/\/docs.oracle.com\/en\/java\/javase\/21\/docs\/api\/=/=/maven.pomderived=/true=/&lt;java.lang(RuntimeException.class[RuntimeException" modifiers="33" timestamp="1738215354000"/>
+    <typeInfo handle="=healtcare_backend/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;com.healthcare.service{AppointmentService.java[AppointmentService" modifiers="513" timestamp="1762349305636"/>
 </typeInfoHistroy>

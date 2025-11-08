@@ -2,6 +2,7 @@ package com.healthcare.controller;
 
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
+import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -35,7 +36,7 @@ Main highlight - custom query - JPQL
 i/p - user id.
 	 */
 	@GetMapping("/{patientId}/appointments/upcoming")	
-	public  ResponseEntity<?> listUpcomingAppointments(@PathVariable Long patientId )
+	public  ResponseEntity<?> listUpcomingAppointments(@PathVariable @Validated Long patientId )
 	{
 		System.out.println("in patient list appointments "+patientId);
 		//invoker service layer method

@@ -15,5 +15,5 @@ public interface PatientRepository extends JpaRepository<Patient, Long> {
 	@Query("""
 			select t from Patient p join Patient.diagnosticTests t where p.id=:pid
 			""")
-	Set<DiagnosticTest> getAllTestsForPatient(@Param("pid") Long patientId);
+	Set<DiagnosticTest> getAllTestsForPatient(@Param("pid")Long patientId);
 }

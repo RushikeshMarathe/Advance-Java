@@ -27,7 +27,7 @@ VALUES
 (CURDATE(), NOW(), 'pooja.singh@corp.com', 'Pooja', 'Singh', '2018-01-14', 'pooja@123', 83000, 'FULL_TIME', 3),
 
 -- Department 4
-(CURDATE(), NOW(), 'amit.kulkarni@corp.com', 'Amit', 'Kulkarni', '2020-12-30', 'amit@123', 40000, 'PART_TIME', 4),
+
 (CURDATE(), NOW(), 'sana.khan@corp.com', 'Sana', 'Khan', '2023-07-07', 'sana@123', 26000, 'INTERNSHIP', 4),
 (CURDATE(), NOW(), 'devika.pawar@corp.com', 'Devika', 'Pawar', '2019-09-22', 'devika@123', 75000, 'FULL_TIME', 4);
 

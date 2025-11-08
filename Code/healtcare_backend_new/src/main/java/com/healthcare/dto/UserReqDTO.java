@@ -2,6 +2,7 @@ package com.healthcare.dto;
 
 import java.time.LocalDate;
 
+import jakarta.validation.constraints.Email;
 import jakarta.validation.constraints.Past;
 import lombok.Getter;
 import lombok.Setter;

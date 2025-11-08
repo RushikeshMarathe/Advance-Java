@@ -166,7 +166,8 @@ otherwise will have to add name in @RequestParam
 
 
 
-
+13. After clicking on delete link 
+URL - http://localhost:8081/ems/emps/delete?id=6
 
 
 

@@ -797,6 +797,7 @@ Eg .
  }
 
 3. Book Appointment
+// http
 Request Payload -   
 {
   "patientId": 3,

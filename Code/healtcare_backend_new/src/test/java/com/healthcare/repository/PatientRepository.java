@@ -18,8 +18,10 @@ private PatientRepository patientRepository;
 
 
 	@Test
-	Set<DiagnosticTest> getAllTestsForPatient() {
-		Set<DiagnosticTest> getAllTestsForPatient = patientRepository.getAllTestsForPatient(1l);
+	void getAllTestsForPatient() {
+		Set<DiagnosticTest> getAllTestsForPatient = patientRepository.getAllTestsForPatient(3l);
 	}
+	
+	@asse
 
 }

@@ -1,0 +1,129 @@
+Today's objectives
+1. Revise 
+Invoke REST API from postman
+ Server side validations , Global Exception Handling & Testing
+
+New Topics
+
+1. Set up bi directional association between Department 1 <----- * Employee
+Tables
+- departments , emps
+E-R
+- FK
+ - emps table FK dept_id -> references PK of departments table.
+
+In Object world
+Department 1 <----- * Employee
+
+Department class - extends BaseEntity
+ name (unique) , location
+
+
+Employee class - extends BaseEntity
+
+firstName , lastName , dob ....
++ 
+@ManyToOne
+@JoinColumn(name="dept_id" , nullable=false)
+private Department myDepartment;
+
+Even w/o bi dir asso
+list all emps from the specified dept -by dept name : unique
+
+Emp Repo<Emp,Long> 
+
+List<Employee> findByMyDepartmentName(String deptName);
+
+Business need - bi dir access
+
+ Department class - extends BaseEntity
+ name (unique) , location 
++
+@OneToMany
+private List<Employee> employess=new ArrayList<>();
+
+
+Employee class - extends BaseEntity
+
+fn,ln.......
++ 
+@ManyToOne
+@JoinColumn(name="dept_id" , nullable=false)
+private Department myDepartment;
+
+
+1. If you don't add @OneToMany
+ - MappingException
+
+2. After adding @OneToMany 
+- no mapping exception
+- BUT hibernate creates additional table (eg department_emps)
+ - 2 columns - Composite PK - dept id & emp id
+- quite un necessary
+Cause - 
+In a bi dir association , there are 2 sides of the association
+
+Department(depts) -one,parent rec, non owning (inverse) side of asso.
+
+Employee(emps) - many, multiple child recs , owning side(=the side containing the FK) - owner of the assocition
+
+Hibernate CAN NOT directly find out which is the owning side & which is the inverse . By default , it creates a link(join) table - containing both PKs.
+
+Solution - Inform hibernate about which is the inverse & owning side.
+HOW -
+@OneToMany(mappedBy="name of the property as it appear in the owning side")
+Eg 
+
+@OneToMany(mappedBy="myDepartment")
+private List<Employee> employess=new ArrayList<>();
+
+
+
+In one <---> one , if you don't add mappedBy attribute , what will happen ?
+- FKs will be added in both sides.
+
+In many <---> many , if you don't add mappedBy attribute , what will happen ?
+- Additional join table (=link table | asso table | pivot table) will be created 
+ - COMPLETELY un necessary
+Eg : Patient *<----->* DiagTest
+If you don't add mappedBy 
+ - patient_tests
+ - tests_patients
+
+More attributes
+@OneToMany
+ - mappedBy - only required in bi dir association
+ - cascade - CascadeType.ALL (=save , update , delete)
+ - fetch - default FetchType.LAZY 
+ - To avoid LazyInitException
+  - change fetch type - EAGER
+  OR
+  - access the size of the collection in service laye
+ OR
+ - join fetch
+Eg - select d from Department d join fetch d.employess where d.name=:nm
+ 
+ - orphanRemoval
+
+Never add CascadeType.REMOVE(ALL) in many-many association
+- otherwise un necessary data from the parent tables will be deleted .
+
+What is orphanRemoval ?
+It's the attribute | property of
+@OneToOne , @OneToMany , @ManyToMany annotations.
+Default value = false
+
+Eg. 
+@OneToMany(mappedBy="myDepartmert",cascade=ALL,orphanRemoval=true)
+private List<Emp> emps =new AL<>();
+
+Use case - Delete emp details
+Front end - dept id(only required for extra validation) , emp id
+In Department Service
+Department dept=deptRepo.findById(deptId).orElseThrow...
+Emp emp=empRepo.findById(empdId).orElseThrow...
+//validate if emp's dept matches with dept
+dept.getEmps().remove(emp);
+return ....;//commit -> flush -> dirty chking -> thanks to cascading & orphanRemoval=true , hibernate auto fires a delete query in emps table , ensuring no orphans !
+
+

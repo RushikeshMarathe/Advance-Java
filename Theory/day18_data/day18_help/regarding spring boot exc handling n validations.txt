@@ -1,22 +1,33 @@
 1.Objective  Add P.L(presentation logic) Validations supplied in back end
 
+
+
 Steps
+
 1.1 We Have already added , validation dependency starter in Spring boot project.
 (confirm from pom.xml)
 
+
+
+
+
 1.2  Identify validation rules , add the annotations on POJO(Entity/DTO) properties.
+
 eg : @NotBlank, @Pattern, @Min, @Max,@NotNull,@Past,@Future.......
 Imported from javax.validation , org.hibernate.validator
 (refer to templates.txt under )
+
 eg : first name : can't be blank .(min : 4 chars , max =20 chars)
 last name : can't be blank 
 valid email 
 valid strong password (alpha numeric, special character , min 5 max 20)
+
 eg : ((?=.*\\d)(?=.*[a-z])(?=.*[#@$*]).{5,20})
 reg amount in the range : 500 ---5000
 reg date must be in future
 Test it with postman client
 (Same annotations are used in Spring MVC standalone App , in P.L: presentation logic  validations)
+
 eg : @NotBlank , @NotNull,@Email, @Pattern,@Future ,@Range,@Min,@Max...
 
 
@@ -27,6 +38,9 @@ Observation : HTTP status 400 , BUT entire error stack trace sent to clnt.
 Exception : MethodArgumentNotValidException
 
 Is it a desirable ?? NO
+
+
+
 
 
 1.4 For Path Variables/request params : @Validated , at class level on controller class + validation annotations (eg : @NotNull, @Email...) on the method argument

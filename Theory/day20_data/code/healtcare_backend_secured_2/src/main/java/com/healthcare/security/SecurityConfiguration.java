@@ -38,6 +38,11 @@ public class SecurityConfiguration {
 		http.sessionManagement(sessionConfig -> sessionConfig.sessionCreationPolicy(SessionCreationPolicy.STATELESS));
 		//3. enable Basic Authentication
 		http.httpBasic(Customizer.withDefaults());
+		
+		
+		
+		
+		
 		//4. Specify URL based authorization rules 
 		http.authorizeHttpRequests(request 
 				-> request.requestMatchers("/swagger-ui/**","/v3/api-docs/**","/users/signin","/patients/signup","/doctors/signup").permitAll()
@@ -46,6 +51,10 @@ public class SecurityConfiguration {
 				.requestMatchers("/admin/**").hasRole("ADMIN")
 				.anyRequest().authenticated());
 		return http.build();
+		
+		
+		
+		
 	}
 	
 }

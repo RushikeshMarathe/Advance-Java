@@ -25,9 +25,17 @@ public class SecurityConfiguration {
 		http.csrf(csrf -> csrf.disable());
 		//2. session creation policy - stateless (i.e Spring Security will NOT create HttpSession)
 		http.sessionManagement(sessionConfig -> sessionConfig.sessionCreationPolicy(SessionCreationPolicy.STATELESS));
+		
 		//3. enable Basic Authentication
 		http.httpBasic(Customizer.withDefaults());
+		
+		
 		//4. Add authentication - for ANY request coming from client
+		
+		
+		
+		
+		//giving specific permits to access
 		http.authorizeHttpRequests(request 
 				-> request.anyRequest().authenticated());
 		return http.build();

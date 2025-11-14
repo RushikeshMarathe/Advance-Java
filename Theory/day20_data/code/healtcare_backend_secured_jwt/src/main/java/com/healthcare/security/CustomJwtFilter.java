@@ -47,6 +47,7 @@ public class CustomJwtFilter extends OncePerRequestFilter {
 			UsernamePasswordAuthenticationToken token=
 					new UsernamePasswordAuthenticationToken(dto, 
 							null, List.of(new SimpleGrantedAuthority(role)));
+			
 			//save auth object under sec ctx holder
 			SecurityContextHolder.getContext().setAuthentication(token);
 			log.info("auth info stored in sec ctx.....");

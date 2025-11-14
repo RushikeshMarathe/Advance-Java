@@ -33,6 +33,8 @@ public class JwtUtils {
 		key=Keys.hmacShaKeyFor(secretKey.getBytes());
 		System.out.println("secret key created ...");
 	}
+	
+	
 	//add a method to generate signed JWT (JWTS)
 	public String genrateToken(Authentication fullyAuth)
 	{
@@ -49,6 +51,8 @@ public class JwtUtils {
 				.signWith(key)
 				.compact();
 	}
+	
+	
 	//verify token 
 	public Claims validateToken(String jwt)
 	{

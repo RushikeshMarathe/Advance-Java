@@ -1,12 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <typeInfoHistroy>
-    <typeInfo handle="=hibernate_template/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;com.healthcare.dao{UserDao.java[UserDao" modifiers="513" timestamp="1761560351955"/>
-    <typeInfo handle="=hibernate2_practice/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;com.healthcare.dao{UserDao.java[UserDao" modifiers="513" timestamp="1761584707078"/>
-    <typeInfo handle="=day10_lab/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;com.healthcare.dao{ProductDao.java[ProductDao" modifiers="513" timestamp="1761784829348"/>
-    <typeInfo handle="=day11.3_Optional/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;com.healthcare.dao{AuthenticationDao.java[AuthenticationDao" modifiers="513" timestamp="1761786371108"/>
-    <typeInfo handle="=day11.3_Optional/C:\/Users\/Admin\/.m2\/repository\/com\/mysql\/mysql-connector-j\/9.3.0\/mysql-connector-j-9.3.0.jar=/maven.pomderived=/true=/=/maven.groupId=/com.mysql=/=/maven.artifactId=/mysql-connector-j=/=/maven.version=/9.3.0=/=/maven.scope=/compile=/=/maven.pomderived=/true=/&lt;com.mysql.cj.x.protobuf(MysqlxSession$AuthenticateOkOrBuilder.class[AuthenticateOkOrBuilder" modifiers="1545" timestamp="1761457603279"/>
-    <typeInfo handle="=spring_mvc_hibernate/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;com.ems.dao{DepartmentDao.java[DepartmentDao" modifiers="513" timestamp="1761994241166"/>
-    <typeInfo handle="=spring_mvc_hibernate/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;com.ems.service{DepartmentService.java[DepartmentService" modifiers="513" timestamp="1761995016964"/>
-    <typeInfo handle="=day16_backend/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;com.cdac.service{RestaurantService.java[RestaurantService" modifiers="513" timestamp="1762279638404"/>
-    <typeInfo handle="=day16_backend/E:\/ADV JAVA\/sts-4.30.0.RELEASE\/plugins\/org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_21.0.6.v20250130-0529\/jre\/lib\/jrt-fs.jar`java.base=/javadoc_location=/https:\/\/docs.oracle.com\/en\/java\/javase\/21\/docs\/api\/=/=/maven.pomderived=/true=/&lt;java.lang(RuntimeException.class[RuntimeException" modifiers="33" timestamp="1738215354000"/>
+    <typeInfo handle="=GymManagement/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;com.gym.service{TrainerService.java[TrainerService" modifiers="513" timestamp="1763123636213"/>
+    <typeInfo handle="=GymManagement/C:\/Users\/Admin\/.m2\/repository\/org\/springframework\/data\/spring-data-jpa\/3.5.5\/spring-data-jpa-3.5.5.jar=/maven.pomderived=/true=/=/maven.groupId=/org.springframework.data=/=/maven.artifactId=/spring-data-jpa=/=/maven.version=/3.5.5=/=/maven.scope=/compile=/=/maven.pomderived=/true=/&lt;org.springframework.data.jpa.repository(JpaRepository.class[JpaRepository" modifiers="1537" timestamp="1762073944743"/>
+    <typeInfo handle="=PolicyCRUD/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;com.gym.service{PolicyService.java[PolicyService" modifiers="513" timestamp="1763136207494"/>
+    <typeInfo handle="=PolicyCRUD/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;com.gym.dao{PolicyDao.java[PolicyDao" modifiers="513" timestamp="1763137981042"/>
 </typeInfoHistroy>
